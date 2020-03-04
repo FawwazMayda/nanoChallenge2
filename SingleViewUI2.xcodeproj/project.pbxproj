@@ -13,6 +13,8 @@
 		4DA8D98F240FD42100C57B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA8D98D240FD42100C57B63 /* Main.storyboard */; };
 		4DA8D991240FD42200C57B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA8D990240FD42200C57B63 /* Assets.xcassets */; };
 		4DA8D994240FD42200C57B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA8D992240FD42200C57B63 /* LaunchScreen.storyboard */; };
+		4DA8D99C240FD4EC00C57B63 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8D99B240FD4EC00C57B63 /* Slide.swift */; };
+		4DA8D99E240FD52900C57B63 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA8D99D240FD52900C57B63 /* Slide.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4DA8D990240FD42200C57B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DA8D993240FD42200C57B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DA8D995240FD42200C57B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA8D99B240FD4EC00C57B63 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		4DA8D99D240FD52900C57B63 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				4DA8D989240FD42100C57B63 /* SceneDelegate.swift */,
 				4DA8D98B240FD42100C57B63 /* ViewController.swift */,
 				4DA8D98D240FD42100C57B63 /* Main.storyboard */,
+				4DA8D99B240FD4EC00C57B63 /* Slide.swift */,
+				4DA8D99D240FD52900C57B63 /* Slide.xib */,
 				4DA8D990240FD42200C57B63 /* Assets.xcassets */,
 				4DA8D992240FD42200C57B63 /* LaunchScreen.storyboard */,
 				4DA8D995240FD42200C57B63 /* Info.plist */,
@@ -128,6 +134,7 @@
 				4DA8D994240FD42200C57B63 /* LaunchScreen.storyboard in Resources */,
 				4DA8D991240FD42200C57B63 /* Assets.xcassets in Resources */,
 				4DA8D98F240FD42100C57B63 /* Main.storyboard in Resources */,
+				4DA8D99E240FD52900C57B63 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				4DA8D98C240FD42100C57B63 /* ViewController.swift in Sources */,
 				4DA8D988240FD42100C57B63 /* AppDelegate.swift in Sources */,
 				4DA8D98A240FD42100C57B63 /* SceneDelegate.swift in Sources */,
+				4DA8D99C240FD4EC00C57B63 /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
