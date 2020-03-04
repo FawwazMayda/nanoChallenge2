@@ -17,5 +17,11 @@ class Slide: UIView {
         // Drawing code
     }
     */
-
+    @IBOutlet weak var scrollImage: UIImageView!
+    
+    @IBOutlet weak var scrollHeadline: UILabel!
+    
+    @IBOutlet weak var scrollDetail: UILabel!
+    
+    var url : String = "";
 }

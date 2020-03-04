@@ -30,6 +30,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="pageControl" destination="p7j-kW-KOM" id="bdC-6i-4ih"/>
                         <outlet property="scrollView" destination="jPo-Rx-y0R" id="YJO-Zb-gIO"/>
                     </connections>
                 </viewController>
