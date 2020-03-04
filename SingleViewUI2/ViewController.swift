@@ -31,12 +31,12 @@ class ViewController: UIViewController {
     }
     
     func setupSlideScrollView(slides : [Slide]) {
-        scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
-        scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
+        scrollView.frame = CGRect(x: 0, y: 0, width: 400, height: 500)
+        scrollView.contentSize = CGSize(width: (400) * CGFloat(slides.count), height: 500)
         scrollView.isPagingEnabled = true
         
         for i in 0 ..< slides.count {
-            slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
+            slides[i].frame = CGRect(x: 400 * CGFloat(i), y: 0, width: 400, height: 500)
             scrollView.addSubview(slides[i])
         }
     }
@@ -52,5 +52,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func glossaryTap(_ sender: UIButton) {
+        print("Gloss")
+        let vc = WebViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
