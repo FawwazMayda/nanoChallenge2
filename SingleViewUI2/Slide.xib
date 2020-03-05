@@ -28,6 +28,9 @@
                     <rect key="frame" x="281" y="236" width="29" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button" image="arrow.right" catalog="system"/>
+                    <connections>
+                        <action selector="urlTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="l2b-wF-UsS"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESo-fl-eSW">
                     <rect key="frame" x="87" y="196" width="140" height="50"/>

@@ -50,11 +50,28 @@
                     <connections>
                         <outlet property="pageControl" destination="p7j-kW-KOM" id="bdC-6i-4ih"/>
                         <outlet property="scrollView" destination="jPo-Rx-y0R" id="YJO-Zb-gIO"/>
+                        <segue destination="NNa-le-jrD" kind="show" identifier="segueWeb" id="8zd-zm-qpA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="s20-SG-2Bl">
+            <objects>
+                <viewController id="NNa-le-jrD" customClass="WebViewController" customModule="SingleViewUI2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ttG-bf-dnh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nfK-e3-bGs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UPj-d8-gNN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikG-q4-YLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018" y="134"/>
         </scene>
     </scenes>
 </document>

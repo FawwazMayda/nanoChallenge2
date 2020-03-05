@@ -9,21 +9,13 @@
 import UIKit
 import WebKit
 class WebViewController: UIViewController {
-
-    @IBOutlet weak var webViewEL: WKWebView!
+    var urlData : String?;
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
-    override func loadView() {
-        let url = URL(string: "https://yahoo.com")!
-        let req = URLRequest(url: url)
-        webViewEL.load(req)
-        view = webViewEL
-    }
-
+    
 
     /*
     // MARK: - Navigation

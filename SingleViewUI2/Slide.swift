@@ -8,6 +8,9 @@
 
 import UIKit
 
+protocol sendURLDelegate {
+    func thisIsURL(alamat : String)
+}
 class Slide: UIView {
 
     /*
@@ -17,11 +20,25 @@ class Slide: UIView {
         // Drawing code
     }
     */
+    var myDelegate : sendURLDelegate?
     @IBOutlet weak var scrollImage: UIImageView!
     
     @IBOutlet weak var scrollHeadline: UILabel!
     
     @IBOutlet weak var scrollDetail: UILabel!
     
-    var url : String = "";
+    var url : String = "https://developer.apple.com";
+    
+    
+    @IBAction func urlTap(_ sender: Any) {
+        print("TAP \(url)")
+        if let x = myDelegate {
+            x.thisIsURL(alamat: url)
+        }
+        else {
+            print("Error with delegate")
+        }
+    }
+    
+    
 }
