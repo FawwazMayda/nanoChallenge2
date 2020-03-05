@@ -30,7 +30,14 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
         slide2.url = "https://pytorch.org"
         slide2.myDelegate = self
         
-        return [slide1,slide2]
+        let slide3 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
+        slide3.scrollImage.image = UIImage(named:"coreml")
+        slide3.scrollHeadline.text = "Apple Framework for Machine Learning"
+        slide3.scrollDetail.text = "Deep Dive to Apple Offering for Developer"
+        slide3.url = "https://developer.apple.com/machine-learning/"
+        slide3.myDelegate = self
+        
+        return [slide1,slide2,slide3]
         
     }
     
