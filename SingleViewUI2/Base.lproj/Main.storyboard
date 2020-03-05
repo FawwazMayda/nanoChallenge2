@@ -32,6 +32,9 @@
                                 <state key="normal" title="Quiz">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="quizTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRO-z1-gc0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yts-au-WH6">
                                 <rect key="frame" x="334" y="767" width="60" height="30"/>
@@ -51,6 +54,7 @@
                         <outlet property="pageControl" destination="p7j-kW-KOM" id="bdC-6i-4ih"/>
                         <outlet property="scrollView" destination="jPo-Rx-y0R" id="YJO-Zb-gIO"/>
                         <segue destination="NNa-le-jrD" kind="show" identifier="segueWeb" id="8zd-zm-qpA"/>
+                        <segue destination="ghb-x7-dNX" kind="show" identifier="quizSegue" id="x0b-A3-weW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -61,17 +65,75 @@
         <scene sceneID="s20-SG-2Bl">
             <objects>
                 <viewController id="NNa-le-jrD" customClass="WebViewController" customModule="SingleViewUI2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ttG-bf-dnh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="nfK-e3-bGs"/>
-                    </view>
                     <navigationItem key="navigationItem" id="UPj-d8-gNN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikG-q4-YLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018" y="134"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="JCB-Fo-kW3">
+            <objects>
+                <viewController id="ghb-x7-dNX" customClass="QuizViewController" customModule="SingleViewUI2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ts5-Yt-0mo" customClass="Quiz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrM-cO-wpR">
+                                <rect key="frame" x="115" y="384" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Option 1"/>
+                                <connections>
+                                    <action selector="button1Tapped:" destination="ghb-x7-dNX" eventType="touchUpInside" id="G3l-Ph-lDp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIy-ga-fXG">
+                                <rect key="frame" x="174" y="482" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Option 2"/>
+                                <connections>
+                                    <action selector="button2Tapped:" destination="ghb-x7-dNX" eventType="touchUpInside" id="1Pr-ug-Ot3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xg-eO-Jy2">
+                                <rect key="frame" x="177" y="588" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Option 3"/>
+                                <connections>
+                                    <action selector="button3Tapped:" destination="ghb-x7-dNX" eventType="touchUpInside" id="VvW-DN-q9S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caj-eF-gfz">
+                                <rect key="frame" x="177" y="691" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Option 4"/>
+                                <connections>
+                                    <action selector="button4Tapped:" destination="ghb-x7-dNX" eventType="touchUpInside" id="azN-ZD-pqR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5r-sX-U1n">
+                                <rect key="frame" x="88" y="158" width="239" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pMa-of-vu6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iX1-9h-x71"/>
+                    <connections>
+                        <outlet property="labelQuestion" destination="a5r-sX-U1n" id="YoJ-qT-Ucg"/>
+                        <outlet property="option1Button" destination="nrM-cO-wpR" id="Vxs-fF-CDl"/>
+                        <outlet property="option2Button" destination="YIy-ga-fXG" id="skg-Wx-Bl0"/>
+                        <outlet property="option3Button" destination="2xg-eO-Jy2" id="QW9-bg-hA5"/>
+                        <outlet property="option4Button" destination="Caj-eF-gfz" id="2pI-To-8h2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQT-nu-tDY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="835.71428571428567"/>
         </scene>
     </scenes>
 </document>

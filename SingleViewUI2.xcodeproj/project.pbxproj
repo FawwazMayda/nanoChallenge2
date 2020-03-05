@@ -16,6 +16,7 @@
 		4DA8D99C240FD4EC00C57B63 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8D99B240FD4EC00C57B63 /* Slide.swift */; };
 		4DA8D99E240FD52900C57B63 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DA8D99D240FD52900C57B63 /* Slide.xib */; };
 		4DA8D9AA240FF27D00C57B63 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8D9A9240FF27D00C57B63 /* WebViewController.swift */; };
+		4DEBA1952410E08200CA5A11 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBA1942410E08200CA5A11 /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4DA8D99B240FD4EC00C57B63 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		4DA8D99D240FD52900C57B63 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		4DA8D9A9240FF27D00C57B63 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		4DEBA1942410E08200CA5A11 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4DA8D989240FD42100C57B63 /* SceneDelegate.swift */,
 				4DA8D98B240FD42100C57B63 /* ViewController.swift */,
 				4DA8D98D240FD42100C57B63 /* Main.storyboard */,
+				4DEBA1942410E08200CA5A11 /* QuizViewController.swift */,
 				4DA8D9A9240FF27D00C57B63 /* WebViewController.swift */,
 				4DA8D99B240FD4EC00C57B63 /* Slide.swift */,
 				4DA8D99D240FD52900C57B63 /* Slide.xib */,
@@ -151,6 +154,7 @@
 				4DA8D98C240FD42100C57B63 /* ViewController.swift in Sources */,
 				4DA8D988240FD42100C57B63 /* AppDelegate.swift in Sources */,
 				4DA8D98A240FD42100C57B63 /* SceneDelegate.swift in Sources */,
+				4DEBA1952410E08200CA5A11 /* QuizViewController.swift in Sources */,
 				4DA8D9AA240FF27D00C57B63 /* WebViewController.swift in Sources */,
 				4DA8D99C240FD4EC00C57B63 /* Slide.swift in Sources */,
 			);

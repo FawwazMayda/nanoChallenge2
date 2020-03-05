@@ -76,4 +76,10 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
         webViewEL.allowsBackForwardNavigationGestures = true
         view = webViewEL
     }
+    
+    
+    @IBAction func quizTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "quizSegue", sender: self)
+    }
+    
 }
