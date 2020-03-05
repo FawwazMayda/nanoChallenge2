@@ -8,7 +8,7 @@
 
 import UIKit
 import  WebKit
-class ViewController: UIViewController , sendURLDelegate  {
+class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -20,12 +20,14 @@ class ViewController: UIViewController , sendURLDelegate  {
         slide1.scrollImage.image = UIImage(named: "tflogo")
         slide1.scrollHeadline.text = "Hi, to the new TensorFlow 2.0"
         slide1.scrollDetail.text = "Latest release of Google's Open Source Framework"
+        slide1.url = "https://tensorflow.org"
         slide1.myDelegate = self
         
         let slide2 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
         slide2.scrollImage.image = UIImage(named: "torchlogo")
         slide2.scrollHeadline.text = "Facebook PyTorch"
         slide2.scrollDetail.text = "The most used Framework in Machine Learning Research"
+        slide2.url = "https://pytorch.org"
         slide2.myDelegate = self
         
         return [slide1,slide2]
@@ -63,19 +65,15 @@ class ViewController: UIViewController , sendURLDelegate  {
 
     @IBAction func glossaryTap(_ sender: UIButton) {
         print("Gloss")
-        getWebView(alamat: "Https://yahoo.com")
-        //let vc = WebViewController()
-        //self.navigationController?.pushViewController(vc, animated: true)
-        /*let url = URL(string: "https://yahoo.com")!
-              let req = URLRequest(url: url)
-              webViewEL.load(req)
-              view = webViewEL*/
+        getWebView(alamat: "https://developers.google.com/machine-learning/glossary")
     }
     
     func getWebView(alamat : String){
         let url = URL(string: alamat)!
         let req = URLRequest(url: url)
         webViewEL.load(req)
+        webViewEL.navigationDelegate = self
+        webViewEL.allowsBackForwardNavigationGestures = true
         view = webViewEL
     }
 }
