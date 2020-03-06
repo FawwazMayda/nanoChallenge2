@@ -57,7 +57,6 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
         slide5.url = "https://thegradient.pub/beyond-the-pixel-plane-sensing-and-learning-in-3d/"
         slide5.myDelegate = self
         return [slide1,slide2,slide4,slide3,slide5]
-        
     }
     
     func thisIsURL(alamat: String) {
@@ -82,7 +81,6 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
         setupSlideScrollView(slides: slides)
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
-        //pageControl.currentPage = UpdateCounter
         view.bringSubviewToFront(pageControl)
         
         quizButton.layer.cornerRadius = 7.0
