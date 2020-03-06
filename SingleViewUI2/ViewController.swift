@@ -43,7 +43,20 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
         slide3.url = "https://developer.apple.com/machine-learning/"
         slide3.myDelegate = self
         
-        return [slide1,slide2,slide3]
+        let slide4 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
+        slide4.scrollImage.image = UIImage(named : "lstm")
+        slide4.scrollHeadline.text = "Explaining a LSTM"
+        slide4.scrollDetail.text = "One of the crucial architecture the LSTM"
+        slide4.url = "https://colah.github.io/posts/2015-08-Understanding-LSTMs"
+        slide4.myDelegate = self
+        
+        let slide5 : Slide =  Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
+        slide5.scrollImage.image = UIImage(named : "beyondpixel")
+        slide5.scrollHeadline.text = "Learning the 3D Environment"
+        slide5.scrollDetail.text = "See how Deep Learning Conquer the 3D World"
+        slide5.url = "https://thegradient.pub/beyond-the-pixel-plane-sensing-and-learning-in-3d/"
+        slide5.myDelegate = self
+        return [slide1,slide2,slide4,slide3,slide5]
         
     }
     
