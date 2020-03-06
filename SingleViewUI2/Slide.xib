@@ -27,7 +27,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAn-Px-2nV">
                     <rect key="frame" x="281" y="253" width="29" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button" image="arrow.right" catalog="system"/>
+                    <state key="normal" image="arrow.right" catalog="system"/>
                     <connections>
                         <action selector="urlTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="l2b-wF-UsS"/>
                     </connections>

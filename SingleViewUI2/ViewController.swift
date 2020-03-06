@@ -20,6 +20,7 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
     var slides : [Slide] = []
     var webViewEL : WKWebView = WKWebView()
     var thisURL : String = ""
+
     func addSlide() ->[Slide] {
         let slide1 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
         slide1.scrollImage.image = UIImage(named: "tflogo")
