@@ -49,11 +49,13 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="xIN-pk-dvJ"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="glossaryButton" destination="Yts-au-WH6" id="WwQ-fN-S1S"/>
                         <outlet property="pageControl" destination="p7j-kW-KOM" id="bdC-6i-4ih"/>
+                        <outlet property="quizButton" destination="JvR-Qb-YgG" id="N9w-xp-XFp"/>
                         <outlet property="scrollView" destination="jPo-Rx-y0R" id="YJO-Zb-gIO"/>
                         <segue destination="NNa-le-jrD" kind="show" identifier="segueWeb" id="8zd-zm-qpA"/>
                         <segue destination="ghb-x7-dNX" kind="show" identifier="quizSegue" id="x0b-A3-weW"/>

@@ -13,6 +13,10 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var pageControl: UIPageControl!
+    
+    @IBOutlet weak var quizButton: UIButton!
+    
+    @IBOutlet weak var glossaryButton: UIButton!
     var slides : [Slide] = []
     var webViewEL : WKWebView = WKWebView()
     func addSlide() ->[Slide] {
@@ -63,10 +67,11 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
         setupSlideScrollView(slides: slides)
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
+        //pageControl.currentPage = UpdateCounter
         view.bringSubviewToFront(pageControl)
-        //print("Kirimkan Delegate")
-        //let delegate = Slide()
-        //delegate.myDelegate = self
+        
+        quizButton.layer.cornerRadius = 7.0
+        glossaryButton.layer.cornerRadius = 7.0
     }
 
 
