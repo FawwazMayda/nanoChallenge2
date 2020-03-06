@@ -68,6 +68,7 @@ class QuizViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("QUIZ VIEW")
         addQuestion()
         drawQuestion()
         // Do any additional setup after loading the view.
