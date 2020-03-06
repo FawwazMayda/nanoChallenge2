@@ -19,6 +19,7 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
     @IBOutlet weak var glossaryButton: UIButton!
     var slides : [Slide] = []
     var webViewEL : WKWebView = WKWebView()
+    var thisURL : String = ""
     func addSlide() ->[Slide] {
         let slide1 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
         slide1.scrollImage.image = UIImage(named: "tflogo")
@@ -77,21 +78,34 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
 
     @IBAction func glossaryTap(_ sender: UIButton) {
         print("Gloss")
-        getWebView(alamat: "https://developers.google.com/machine-learning/glossary")
+        thisURL = "https://developers.google.com/machine-learning/glossary"
+        //getWebView(alamat: "https://developers.google.com/machine-learning/glossary")
+        performSegue(withIdentifier: "segueWeb", sender: self)
     }
     
     func getWebView(alamat : String){
+        /*
         let url = URL(string: alamat)!
         let req = URLRequest(url: url)
         webViewEL.load(req)
         webViewEL.navigationDelegate = self
         webViewEL.allowsBackForwardNavigationGestures = true
         view = webViewEL
+        */
+        thisURL = alamat
+        performSegue(withIdentifier: "segueWeb", sender: self)
     }
     
     
     @IBAction func quizTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "quizSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier=="segueWeb") {
+            let controller = segue.destination as! WebViewController
+            controller.urlData = thisURL
+        }
     }
     
 }

@@ -10,9 +10,16 @@ import UIKit
 import WebKit
 class WebViewController: UIViewController {
     var urlData : String?;
+    var wk : WKWebView?;
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let url = URL(string: urlData!)
+        let req = URLRequest(url: url!)
+        wk = WKWebView()
+        wk?.load(req)
+        wk?.allowsBackForwardNavigationGestures = true
+        view = wk
     }
     
     
