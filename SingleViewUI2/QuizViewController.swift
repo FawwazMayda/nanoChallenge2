@@ -72,6 +72,19 @@ class QuizViewController: UIViewController {
         addQuestion()
         drawQuestion()
         // Do any additional setup after loading the view.
+        // Edit Button Appreance
+        giveButtonStyle(option1Button)
+        giveButtonStyle(option2Button)
+        giveButtonStyle(option3Button)
+        giveButtonStyle(option4Button)
+    }
+    
+    func giveButtonStyle(_ button : UIButton) {
+        button.layer.cornerRadius = 7.0
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 2, height: 2)
+        button.layer.shadowRadius = 1
+        button.layer.shadowOpacity = 1.0
     }
     
     
