@@ -65,12 +65,12 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
     }
     
     func setupSlideScrollView(slides : [Slide]) {
-        scrollView.frame = CGRect(x: 0, y: 0, width: 400, height: 500)
-        scrollView.contentSize = CGSize(width: (400) * CGFloat(slides.count), height: 500)
+        scrollView.frame = CGRect(x: 0, y: 0, width: 500, height: 500)
+        scrollView.contentSize = CGSize(width: (500) * CGFloat(slides.count), height: 500)
         scrollView.isPagingEnabled = true
         
         for i in 0 ..< slides.count {
-            slides[i].frame = CGRect(x: 400 * CGFloat(i), y: 0, width: 400, height: 500)
+            slides[i].frame = CGRect(x: 500 * CGFloat(i), y: 0, width: 400, height: 500)
             scrollView.addSubview(slides[i])
         }
     }
