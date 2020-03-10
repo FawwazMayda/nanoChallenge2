@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4DA8D984240FD42100C57B63 /* SingleViewUI2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleViewUI2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA8D984240FD42100C57B63 /* nanoChallenge2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nanoChallenge2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA8D987240FD42100C57B63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA8D989240FD42100C57B63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4DA8D98B240FD42100C57B63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		4DA8D985240FD42100C57B63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4DA8D984240FD42100C57B63 /* SingleViewUI2.app */,
+				4DA8D984240FD42100C57B63 /* nanoChallenge2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 			);
 			name = SingleViewUI2;
 			productName = SingleViewUI2;
-			productReference = 4DA8D984240FD42100C57B63 /* SingleViewUI2.app */;
+			productReference = 4DA8D984240FD42100C57B63 /* nanoChallenge2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -308,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bola.SingleViewUI2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = nanoChallenge2;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bola.SingleViewUI2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = nanoChallenge2;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
