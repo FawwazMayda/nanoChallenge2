@@ -9,7 +9,9 @@
 import UIKit
 import  WebKit
 class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  {
-
+    
+    @IBOutlet weak var scrollContainer: UIView!
+    
     @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var pageControl: UIPageControl!
@@ -65,12 +67,13 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
     }
     
     func setupSlideScrollView(slides : [Slide]) {
-        scrollView.frame = CGRect(x: 0, y: 0, width: 500, height: 500)
-        scrollView.contentSize = CGSize(width: (500) * CGFloat(slides.count), height: 500)
+        //width 314 height 258
+        scrollView.frame = CGRect(x: 15, y: 0, width: 320, height: 320)
+        scrollView.contentSize = CGSize(width: (314) * CGFloat(slides.count), height: 258)
         scrollView.isPagingEnabled = true
         
         for i in 0 ..< slides.count {
-            slides[i].frame = CGRect(x: 500 * CGFloat(i), y: 0, width: 400, height: 500)
+            slides[i].frame = CGRect(x: (314 * CGFloat(i)), y: 0, width: 314, height: 258)
             scrollView.addSubview(slides[i])
         }
     }
@@ -85,6 +88,7 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
         
         quizButton.layer.cornerRadius = 7.0
         glossaryButton.layer.cornerRadius = 7.0
+        scrollContainer.layer.cornerRadius = 7.0
     }
 
 
