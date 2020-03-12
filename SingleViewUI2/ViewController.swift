@@ -96,7 +96,7 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
         print("Gloss")
         thisURL = "https://developers.google.com/machine-learning/glossary"
         //getWebView(alamat: "https://developers.google.com/machine-learning/glossary")
-        performSegue(withIdentifier: "segueWeb", sender: self)
+        performSegue(withIdentifier: "glossSegue", sender: self)
     }
     
     func getWebView(alamat : String){

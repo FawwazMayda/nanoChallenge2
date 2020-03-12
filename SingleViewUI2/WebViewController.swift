@@ -14,6 +14,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(urlData)
         let url = URL(string: urlData!)
         let req = URLRequest(url: url!)
         wk = WKWebView()
