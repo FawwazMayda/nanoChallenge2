@@ -83,17 +83,19 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
         </scene>
-        <!--Web View Controller-->
+        <!--Laman-->
         <scene sceneID="s20-SG-2Bl">
             <objects>
                 <viewController id="NNa-le-jrD" customClass="WebViewController" customModule="nanoChallenge2" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="UPj-d8-gNN"/>
+                    <navigationItem key="navigationItem" title="Laman" id="UPj-d8-gNN">
+                        <barButtonItem key="backBarButtonItem" title="Balik" id="oXj-tP-yB3"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikG-q4-YLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1927.5362318840582" y="133.92857142857142"/>
         </scene>
-        <!--Quiz View Controller-->
+        <!--Kuizzz-->
         <scene sceneID="JCB-Fo-kW3">
             <objects>
                 <viewController id="ghb-x7-dNX" customClass="QuizViewController" customModule="nanoChallenge2" customModuleProvider="target" sceneMemberID="viewController">
@@ -156,7 +158,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pMa-of-vu6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iX1-9h-x71"/>
+                    <navigationItem key="navigationItem" title="Kuizzz" id="iX1-9h-x71"/>
                     <connections>
                         <outlet property="labelQuestion" destination="a5r-sX-U1n" id="YoJ-qT-Ucg"/>
                         <outlet property="option1Button" destination="nrM-cO-wpR" id="Vxs-fF-CDl"/>
