@@ -79,6 +79,10 @@ class QuizViewController: UIViewController {
         giveButtonStyle(option4Button)
     }
     
+    @IBAction func dismissButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
     func giveButtonStyle(_ button : UIButton) {
         button.layer.cornerRadius = 7.0
         button.layer.shadowColor = UIColor.black.cgColor
