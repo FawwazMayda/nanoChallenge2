@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.27254906299999998" green="0.53351557250000003" blue="0.96867316960000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="kTT-Ng-bcI"/>
@@ -524,32 +524,6 @@
                                 <connections>
                                     <action selector="charTapped:" destination="WQC-gb-edh" eventType="touchUpInside" id="aAg-zf-qEV"/>
                                     <action selector="quizTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQj-eS-eLl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVQ-4p-x4d">
-                                <rect key="frame" x="211" y="627" width="78" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9378553033" green="0.62130475039999999" blue="0.2704746723" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="A">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="charTapped:" destination="WQC-gb-edh" eventType="touchUpInside" id="gQt-pg-ssr"/>
-                                    <action selector="quizTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYZ-5Z-Udw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46a-v7-n2r">
-                                <rect key="frame" x="302" y="627" width="78" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.9378553033" green="0.62130475039999999" blue="0.2704746723" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="A">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="charTapped:" destination="WQC-gb-edh" eventType="touchUpInside" id="AfZ-ZG-dgg"/>
-                                    <action selector="quizTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wRT-db-64P"/>
                                 </connections>
                             </button>
                         </subviews>
