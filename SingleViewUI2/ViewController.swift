@@ -25,31 +25,31 @@ class ViewController: UIViewController , WKNavigationDelegate ,sendURLDelegate  
 
     func addSlide() ->[Slide] {
         let slide1 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
-        slide1.scrollImage.image = UIImage(named: "tflogo")
-        slide1.scrollHeadline.text = "Hi, to the new TensorFlow 2.0"
+        slide1.scrollImage.image = UIImage(named: "satu")
+        slide1.scrollHeadline.text = "Reinforcement Learning"
         slide1.scrollDetail.text = "Latest release of Google's Open Source Framework"
-        slide1.url = "https://tensorflow.org"
+        slide1.url = "https://towardsdatascience.com/january-edition-reinforcement-learning-c4501b6e854a"
         slide1.myDelegate = self
         
         let slide2 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
-        slide2.scrollImage.image = UIImage(named: "torchlogo")
-        slide2.scrollHeadline.text = "Facebook PyTorch"
+        slide2.scrollImage.image = UIImage(named: "dua")
+        slide2.scrollHeadline.text = "ML in Browser"
         slide2.scrollDetail.text = "The most used Framework in Machine Learning Research"
-        slide2.url = "https://pytorch.org"
+        slide2.url = "https://towardsdatascience.com/machine-learning-in-the-browser-7fc08858640"
         slide2.myDelegate = self
         
         let slide3 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
-        slide3.scrollImage.image = UIImage(named:"coreml")
-        slide3.scrollHeadline.text = "Apple Framework for Machine Learning"
+        slide3.scrollImage.image = UIImage(named:"tiga")
+        slide3.scrollHeadline.text = "Fairness in AI"
         slide3.scrollDetail.text = "Deep Dive to Apple Offering for Developer"
-        slide3.url = "https://developer.apple.com/machine-learning/"
+        slide3.url = "https://towardsdatascience.com/explaining-measures-of-fairness-f0e419d4e0d7"
         slide3.myDelegate = self
         
         let slide4 : Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
-        slide4.scrollImage.image = UIImage(named : "lstm")
+        slide4.scrollImage.image = UIImage(named : "empat")
         slide4.scrollHeadline.text = "Explaining a LSTM"
         slide4.scrollDetail.text = "One of the crucial architecture the LSTM"
-        slide4.url = "https://colah.github.io/posts/2015-08-Understanding-LSTMs"
+        slide4.url = "https://towardsdatascience.com/on-trolleys-and-missing-the-forest-for-the-trees-or-how-i-went-from-fearing-self-driving-cars-to-a27210456ccf"
         slide4.myDelegate = self
         
         let slide5 : Slide =  Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first! as! Slide
