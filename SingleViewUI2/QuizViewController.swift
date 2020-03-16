@@ -12,6 +12,7 @@ class QuizViewController: UIViewController {
     
     @IBOutlet weak var labelQuestion: UILabel!
     
+    @IBOutlet weak var questionBox: UIView!
     @IBOutlet weak var option1Button: UIButton!
     
     @IBOutlet weak var option2Button: UIButton!
@@ -34,13 +35,13 @@ class QuizViewController: UIViewController {
     var numCorrect : Int = 0
     var currentQuestion : Int = 0
     func addQuestion(){
-        var q = Question(question: "What is the size for VGG-16 input", possibleAnswers: ["278x278","324x324","224x224","244x244"], correctAnswerIndex : 2)
+        var q = Question(question: "What is the size for VGG-16 input?", possibleAnswers: ["278x278","324x324","224x224","244x244"], correctAnswerIndex : 2)
         questionList.append(q)
 
-        q = Question(question: "Activation Function to combat Vanishing Gradient", possibleAnswers: ["Linear","tanH","Sigmoid","reLU"] , correctAnswerIndex: 3)
+        q = Question(question: "Activation Function to combat Vanishing Gradient?", possibleAnswers: ["Linear","tanH","Sigmoid","reLU"] , correctAnswerIndex: 3)
         questionList.append(q)
         
-        q = Question(question: "Apple Specific ML", possibleAnswers: ["TensorFlow","PyTorch","MXNet","CoreML"], correctAnswerIndex: 3)
+        q = Question(question: "Apple Specific ML?", possibleAnswers: ["TensorFlow","PyTorch","MXNet","CoreML"], correctAnswerIndex: 3)
         questionList.append(q)
         
         numQuestion = questionList.count
@@ -77,11 +78,20 @@ class QuizViewController: UIViewController {
         giveButtonStyle(option2Button)
         giveButtonStyle(option3Button)
         giveButtonStyle(option4Button)
+        styleLabel(questionBox)
+        
     }
     
     @IBAction func dismissButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
+    }
+    func styleLabel(_ tile: UIView) {
+        tile.layer.cornerRadius = 7.0
+        tile.layer.shadowColor = UIColor.black.cgColor
+        tile.layer.shadowOffset = CGSize(width: 2, height: 2)
+        tile.layer.shadowRadius = 1
+        tile.layer.shadowOpacity = 1.0
     }
     func giveButtonStyle(_ button : UIButton) {
         button.layer.cornerRadius = 7.0
