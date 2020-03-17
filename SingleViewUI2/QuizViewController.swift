@@ -46,7 +46,6 @@ class QuizViewController: UIViewController {
         
         numQuestion = questionList.count
     }
-    
     func drawQuestion() {
         print("questionIndex: \(currentQuestion) numCorrect: \(numCorrect) numQuestion: \(numQuestion)")
         //Masih ada Quiz

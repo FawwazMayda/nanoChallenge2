@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ML Quiz App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nanoChallenge2" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kTT-Ng-bcI"/>
+                    <navigationItem key="navigationItem" title="ML Quiz App" id="kTT-Ng-bcI"/>
                     <connections>
                         <outlet property="glossaryButton" destination="Yts-au-WH6" id="WwQ-fN-S1S"/>
                         <outlet property="pageControl" destination="p7j-kW-KOM" id="bdC-6i-4ih"/>
@@ -84,11 +84,11 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
         </scene>
-        <!--Laman-->
+        <!--Glossary-->
         <scene sceneID="s20-SG-2Bl">
             <objects>
                 <viewController id="NNa-le-jrD" customClass="WebViewController" customModule="nanoChallenge2" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Laman" id="UPj-d8-gNN">
+                    <navigationItem key="navigationItem" title="Glossary" id="UPj-d8-gNN">
                         <barButtonItem key="backBarButtonItem" title="Balik" id="oXj-tP-yB3"/>
                     </navigationItem>
                 </viewController>
